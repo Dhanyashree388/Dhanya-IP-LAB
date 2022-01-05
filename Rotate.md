@@ -1,4 +1,4 @@
-
+Develop the program to perform linear
 import cv2
 image=cv2.imread('apple.jpg')
 
