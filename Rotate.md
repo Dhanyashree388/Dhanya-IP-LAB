@@ -1,73 +1,21 @@
-```python
+
 import cv2
-```
-
-
-```python
 image=cv2.imread('apple.jpg')
-```
 
-
-```python
 height, width = image.shape[:2]
-```
 
-
-```python
 center = (width/2, height/2)
-```
 
-
-```python
 rotate_matrix = cv2.getRotationMatrix2D(center=center, angle=180, scale=1)
-```
 
-
-```python
 rotated_image = cv2.warpAffine(src=image, M=rotate_matrix, dsize=(width, height))
-```
 
-
-```python
 cv2.imshow('Original image', image)
-```
 
-
-```python
 cv2.imshow('Rotated image', rotated_image)
-```
 
-
-```python
 cv2.waitKey(0)
-```
 
-
-```python
 cv2.imwrite('rotated_image.jpg', rotated_image)
-```
 
-
-```python
-
-```
-
-
-```python
-
-```
-
-
-```python
-
-```
-
-
-```python
-
-```
-
-
-```python
-
-```
+![image](https://user-images.githubusercontent.com/95746271/148197241-7a189ec7-88c6-4b11-8e81-7de68f15a67f.png)
