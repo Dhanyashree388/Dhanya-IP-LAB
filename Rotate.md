@@ -1,4 +1,5 @@
-Develop the program to perform linear
+Develop the program to perform linear tranformation of an image
+
 import cv2
 image=cv2.imread('apple.jpg')
 
